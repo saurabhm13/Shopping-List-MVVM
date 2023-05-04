@@ -25,6 +25,6 @@ abstract class ShoppingDatabase: RoomDatabase() {
 
         private fun createDatabase(context: Context) =
             Room.databaseBuilder(context.applicationContext,
-            ShoppingDatabase::class.java, name = "ShoppingDB.db").build()
+            ShoppingDatabase::class.java, "ShoppingDB.db").build()
     }
 }
